@@ -19,7 +19,7 @@
      <item row="0" column="0">
       <widget class="QLabel" name="chatter_lbl">
        <property name="text">
-        <string>Chatter:</string>
+        <string>Textual Explanation:</string>
        </property>
       </widget>
      </item>
@@ -29,20 +29,6 @@
         <string>---</string>
        </property>
       </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="hi_button">
-       <property name="text">
-        <string>Say Hi</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QSpinBox" name="hi_num"/>
      </item>
     </layout>
    </item>
