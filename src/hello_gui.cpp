@@ -32,6 +32,8 @@ HelloGui::HelloGui(QWidget *parent) :
 {
   ui->setupUi(this);
 
+  //ui->setFixedSize(true);
+
   nh_.reset(new ros::NodeHandle("~"));
 
   // setup the timer that will signal ros stuff to happen
@@ -66,7 +68,10 @@ void HelloGui::spinOnce(){
 void HelloGui::chatterCallback(const std_msgs::String::ConstPtr &msg){
   auto qstring_msg = QString::fromStdString( msg->data.c_str() );
 
+  QFont f("Arial",25);  
+  ui->chatter->setFont(f);
   ui->chatter->setText(qstring_msg);
+  ui->chatter->setAlignment(Qt::AlignLeft);
 }
 
 void HelloGui::on_hi_button_clicked()

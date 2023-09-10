@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
   // set the window title as the node name
   //w.setWindowTitle(QString::fromStdString(ros::this_node::getName()));
-  w.setWindowTitle(QString::fromStdString("Textual Explanations"));
+  w.setWindowTitle(QString::fromStdString("Textual Explanations of a Robot Navigation"));
 
   // load the icon from our qrc file and set it as the application icon
   //QIcon icon(":/icons/my_gui_icon.png");
